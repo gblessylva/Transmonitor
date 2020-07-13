@@ -1,6 +1,4 @@
-import React, {
-  Component
-} from 'react';
+import React, { Component } from 'react';
 import TopWidget from './common/TopWidget';
 
 class MainContents extends Component {
@@ -25,7 +23,8 @@ class MainContents extends Component {
             )
           })}
           </div>
-
+          <div>
+          </div>
 
         </div>
       </React.Fragment>

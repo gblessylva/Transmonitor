@@ -242,22 +242,27 @@ body{
   font-family: 'Segoe UI';
   font-style: normal;
   font-weight: normal;
-  width:25.3rem;
-  padding: 1.5rem;
+  width:26rem;
+  padding: 0.4rem;
   margin: 1rem;
+  display: flex;
 }
 .top-widget-container .widget-details{
   color: #787C90;
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.6rem;
   font-family: 'Segoe UI';
   font-style: normal;
-  font-weight: normal
+  font-weight: normal;
+  width: 70%;
+}
+.widget-graph{
+  width:30%;
 }
 .top-widget-container .widget-details .widget-amount h4 {
   font-style: normal;
   font-weight: normal;
-  font-size: 1.8rem;
+  font-size: 1rem;
   line-height: 2.4rem;
   color: #262626;
   padding-top: 0.5rem;

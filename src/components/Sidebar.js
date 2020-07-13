@@ -1,5 +1,6 @@
 import React from 'react';
 import { FiBell } from 'react-icons/fi'
+import {GrTarget} from 'react-icons/gr'
 
 function Sidebar() {
   return (
@@ -18,7 +19,7 @@ function Sidebar() {
             <li><FiBell /> All Payments</li>
             <li> <FiBell />Reconciled Payments</li>
             <li><FiBell /> Un-Reconciled Payments</li>
-            <li> <FiBell />Manual Settlements</li>
+            <li> <GrTarget />Manual Settlements</li>
           </ul>
         </div>
         < div className = 'sidebar-section' >

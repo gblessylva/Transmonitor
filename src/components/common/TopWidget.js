@@ -1,4 +1,5 @@
 import React from 'react';
+import Chart from './Chart'
 
  function TopWidget(props) {
   return(
@@ -12,7 +13,7 @@ import React from 'react';
         </div>
       </div>
       < div className='widget-graph' >
-        {props.graph}
+        < Chart />
       </ div>
     </div>
   )
