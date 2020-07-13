@@ -227,3 +227,38 @@ body{
   align-items: center;
   cursor: pointer;
 }
+
+/* Top Widgets Styling */
+
+.top-widget {
+  display: flex;
+  flex-direction: row;
+}
+.top-widget-container{
+  background: #FFFFFF;
+  border: 1px solid #EEF8FD;
+  box-sizing: border-box;
+  border-radius: 2px;
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: normal;
+  width:25.3rem;
+  padding: 1.5rem;
+  margin: 1rem;
+}
+.top-widget-container .widget-details{
+  color: #787C90;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: normal
+}
+.top-widget-container .widget-details .widget-amount h4 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  color: #262626;
+  padding-top: 0.5rem;
+}
