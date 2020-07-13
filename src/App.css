@@ -28,7 +28,6 @@ body{
 }
 .sidebar{
   width: 30%;
-  border: 1px solid #d8d8d8;
   background-color: white;
 }
 .main{
@@ -37,9 +36,16 @@ body{
   background-color: white;
   margin: 0 auto;
 }
-.logo{
-  margin-left: 4.5rem;
+.top-nav{
+  display: flex;
+  justify-content: space-between;
+ max-width: 100%;
+ align-items: center;
+ max-height: 6rem;
 }
+/* .logo{
+  margin-left: 4.5rem;
+} */
 .logo > h2{
   font-style: normal;
   font-weight: 900;
@@ -47,4 +53,113 @@ body{
   line-height: 28px;
   padding: 1.5rem;
   color: #1875F0;
+}
+
+.search-form{
+  display: flex;
+}
+.links{
+  display: flex;
+  margin-right: 7rem;
+  height: 100%;
+  align-items: center;
+}
+.links ul{
+  display: flex;
+  align-items: center;
+}
+.links ul li{
+  margin: 0rem 4rem;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  color: #647787;
+  list-style: none;
+}
+.links ul li a{
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  color: #647787;
+  text-decoration: none;
+}
+.notification{
+  position: relative;
+}
+.notify-count{
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  color: #FCFDFF;
+  background: #1860EC;
+  position: absolute;
+  bottom: 1.2rem;
+  left: .6rem;
+}
+
+.profile{
+  display: flex;
+  align-items: center;
+
+}
+.profile-avatar {
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  overflow: hidden;
+  margin: 0 1rem;
+}
+.profile-avatar img{
+  width: 100%;
+  height: 100%;
+}
+.profile-info h3{
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  color: #647787;
+}
+.profile-info p{
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  color: #647787;
+  font-size: 1rem;
+  line-height: 1.3rem;
+}
+
+
+.search-form{
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+.search-form input[type='text']{
+  outline: none;
+  padding: 1rem;
+  border: none;
+  font-size: 1.2rem;
+}
+.search-form button{
+  background: none;
+  color: #0E1D25;
+  font-size: 2rem;
+  border: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
