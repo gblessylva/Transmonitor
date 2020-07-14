@@ -18,8 +18,8 @@ function TopNav() {
       </div>
       <div className='links'>
         <ul>
-          <li> <a href='#'>Support </a> </li>
-          <li> <a href='#'>FAQ </a> </li>
+          <li> <a href='#/'>Support </a> </li>
+          <li> <a href='#/'>FAQ </a> </li>
           <li className='notification'><div className='notify-count'>8</div><FiBell />   </li>
         </ul>
         <div className='profile'>

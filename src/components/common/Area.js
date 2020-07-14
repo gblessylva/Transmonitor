@@ -4,7 +4,6 @@ import {
   Area,
   Line,
   Axis,
-  AreaChart,
 } from 'bizcharts';
 
 function ChartBig() {

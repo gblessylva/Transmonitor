@@ -13,7 +13,7 @@ function dateUtils(date) {
       month += 'May'
     } else if (today.getMonth() === 5) {
       month += 'June'
-    } else if (today.getMonth() == 6) {
+    } else if (today.getMonth() === 6) {
       month = 'July'
     } else if (today.getMonth() === 7) {
       month += 'August'
