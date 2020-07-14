@@ -1,8 +1,22 @@
 import React from 'react';
 import { IoIosSearch } from 'react-icons/io'
 
+import Table from './Table'
 
 function TableSection() {
+  const itemsData = [
+    { itemName: 'Apple Mac Book 15” 250 SSD 12GB', price: 73430, transactionID: 1234567890, status: 'Un-reconciled' },
+    { itemName: 'Apple Mac Book 15” 250 SSD 12GB', price: 73430, transactionID: 1234567890, status: 'Pending' },
+    { itemName: 'Apple Mac Book 15” 250 SSD 12GB', price: 73430, transactionID: 1234567890, status: 'Reconciled' },
+    { itemName: 'Apple Mac Book 15” 250 SSD 12GB', price: 73430, transactionID: 1234567890, status: 'Un-reconciled' },
+    { itemName: 'Apple Mac Book 15” 250 SSD 12GB', price: 73430, transactionID: 1234567890, status: 'Pending' },
+    { itemName: 'Apple Mac Book 15” 250 SSD 12GB', price: 73430, transactionID: 1234567890, status: 'Reconciled' },
+    { itemName: 'Apple Mac Book 15” 250 SSD 12GB', price: 73430, transactionID: 1234567890, status: 'Un-reconciled' },
+    { itemName: 'Apple Mac Book 15” 250 SSD 12GB', price: 73430, transactionID: 1234567890, status: 'Pending' },
+    { itemName: 'Apple Mac Book 15” 250 SSD 12GB', price: 73430, transactionID: 1234567890, status: 'Reconciled' },
+    { itemName: 'Apple Mac Book 15” 250 SSD 12GB', price: 73430, transactionID: 1234567890, status: 'Un-reconciled' },
+    { itemName: 'Apple Mac Book 15” 250 SSD 12GB', price: 73430, transactionID: 1234567890, status: 'Pending' },
+  ]
 
   return (
     <div className='table-section-container'>
@@ -63,8 +77,38 @@ function TableSection() {
 </div>
 </div>
  </header>
- <div className='table-main'>
-   
+      <div className='table-main'>
+            <div className='container'>
+    <div className='table-header'>
+
+    </div>
+    <table>
+      <tr>
+        <th>Item Type</th>
+        <th>Price</th>
+          <th>Transaction No</th>
+          <th>Time</th>
+          <th>Status</th>
+          <th>Info</th>
+      </tr>
+        {itemsData.map((data, key) => {
+           const { itemName, price, transactionID, status } = data
+           return (
+
+              <Table
+                transactionID={transactionID}
+                itemName={itemName}
+                price={price}
+                status={status}
+          />
+            )
+          })}
+        <Table
+
+        />
+    </table>
+    </div>
+
  </div>
     </div>
   )
