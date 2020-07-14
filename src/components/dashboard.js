@@ -9,6 +9,7 @@ class Dashboard extends Component{
       <div>
       <TopNav />
       <div className= 'container'>
+        
         <Sidebar />
         <MainContents />
        </div>

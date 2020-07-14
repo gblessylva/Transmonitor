@@ -2,6 +2,7 @@ import React from 'react';
 import { IoIosSearch } from 'react-icons/io'
 
 import Table from './Table'
+import ButtomNav from './bottomNav'
 
 function TableSection() {
   const itemsData = [
@@ -11,8 +12,6 @@ function TableSection() {
     { itemName: 'Apple Mac Book 15” 250 SSD 12GB', price: 73430, transactionID: 1234567890, status: 'Un-reconciled' },
     { itemName: 'Apple Mac Book 15” 250 SSD 12GB', price: 73430, transactionID: 1234567890, status: 'Pending' },
     { itemName: 'Apple Mac Book 15” 250 SSD 12GB', price: 73430, transactionID: 1234567890, status: 'Reconciled' },
-    { itemName: 'Apple Mac Book 15” 250 SSD 12GB', price: 73430, transactionID: 1234567890, status: 'Un-reconciled' },
-    { itemName: 'Apple Mac Book 15” 250 SSD 12GB', price: 73430, transactionID: 1234567890, status: 'Pending' },
     { itemName: 'Apple Mac Book 15” 250 SSD 12GB', price: 73430, transactionID: 1234567890, status: 'Reconciled' },
     { itemName: 'Apple Mac Book 15” 250 SSD 12GB', price: 73430, transactionID: 1234567890, status: 'Un-reconciled' },
     { itemName: 'Apple Mac Book 15” 250 SSD 12GB', price: 73430, transactionID: 1234567890, status: 'Pending' },
@@ -106,7 +105,8 @@ function TableSection() {
 </div>
     </div>
 
- </div>
+      </div>
+      <ButtomNav />
     </div>
   )
 
