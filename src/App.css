@@ -362,7 +362,7 @@ body {
 
 .overview-graph {
   width: 60%;
-  border: 1px solid green;
+  background: white;
 }
 
 .overview-bar {
