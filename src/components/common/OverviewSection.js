@@ -35,7 +35,7 @@ const data = [
           <p className='bold'>Today: {date} </p>
           <div>
             <select>
-              <option selected>Jan - Jun</option>
+              <option selected className='options'>Jan - Jun</option>
               <option >July - Dec</option>
               <option >Jan - Dec</option>
             </select>
@@ -43,7 +43,6 @@ const data = [
           <div className='next-back-button'>
             <button> &#8249; </button>
             < button >&#8250; </button>
-
           </div>
 
         </div>
