@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import TopWidget from './common/TopWidget';
+import Overview from './common/OverviewSection';
 
 class MainContents extends Component {
   render() {
@@ -23,10 +24,11 @@ class MainContents extends Component {
             )
           })}
           </div>
-          <div>
-          </div>
-
+        <div>
+            <Overview />
         </div>
+
+      </div>
       </React.Fragment>
     )
   }

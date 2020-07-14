@@ -9,9 +9,10 @@ import {
 function WidgetChart() {
   const data = [
     { year: '1991', value: 150 },
-    { year: '1992', value: 10 },
-    { year: '1993', value: 250 },
-    { year: '1994', value: 400 }
+    { year: '1992', value: 90 },
+    { year: '1993', value: 200 },
+    { year: '1994', value: 400 },
+    { year: '1993', value: 250 }
   ];
 
   const scale = {
