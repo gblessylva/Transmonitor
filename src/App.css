@@ -280,11 +280,11 @@ body {
   font-family: 'Segoe UI';
   font-style: normal;
   font-weight: normal;
-  width: 70%;
+  width: 60%;
 }
 
 .widget-graph {
-  width: 30%;
+  width: 40%;
 }
 
 .top-widget-container .widget-details .widget-amount h4 {
@@ -490,4 +490,180 @@ outline:#DDE0E3;
 }
 .graph-label>div:last-child{
   border: none;
+}
+/* Styling for Payment Section */
+.table-section-container{
+  display: flex;
+  height: 80rem;
+}
+.table-section-container header{
+  display: flex;
+  width:100%;
+  flex-direction: column;
+}
+.table-section-container header .header-details{
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 17px;
+  color: #262626;
+}
+.table-section-container header h3{
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3.6rem;
+  line-height: 4.8rem;
+  display: flex;
+  padding:1rem;
+  align-items: flex-end;
+  padding-left: 0.5rem;
+  color: #262626;
+  }
+
+  .header-details p span{
+    color: #1875F0
+  }
+  .header-details p span:after{
+    content: '\25BC';
+    cursor: pointer;
+    padding:0.2rem;
+  }
+.table-section-container header .search-form{
+    background-color: #E5E5E5;
+    color: #787878;
+    font-size: 1.1rem;
+    width: 30rem;
+    border-bottom: 0.5px solid #787878;
+}
+.table-section-container header .search-form button{
+      color: #787878;
+}
+.table-section-container header .search-form div input[type='text']{
+  background: none;
+  width: 20rem;
+}
+.select-box {
+  position: relative;
+  width: 15rem;
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  color: #60666d;
+  border: 1px solid #CED0DA;
+  box-sizing: border-box;
+  border-radius: 2px;
+
+}
+
+.select-box__current {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+}
+
+.select-box__current:focus+.select-box__list {
+  opacity: 1;
+  -webkit-animation-name: none;
+  animation-name: none;
+}
+
+.select-box__current:focus+.select-box__list .select-box__option {
+  cursor: pointer;
+}
+
+.select-box__current:focus .select-box__icon {
+  -webkit-transform: translateY(-50%) rotate(180deg);
+  transform: translateY(-50%) rotate(180deg);
+}
+.select-box__icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 1.2rem;
+  opacity: 0.3;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+.select-box__value {
+  display: -webkit-box;
+  display: flex;
+}
+
+.select-box__input {
+  display: none;
+}
+
+.select-box__input:checked+.select-box__input-text {
+  display: block;
+}
+
+.select-box__input-text {
+  display: none;
+  width: 100%;
+  padding:1rem 1.5rem;
+  background: #F4F4F4;
+}
+.select-box__list {
+  position: absolute;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  opacity: 0;
+  -webkit-animation-name: HideList;
+  animation-name: HideList;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-timing-function: step-start;
+  animation-timing-function: step-start;
+  box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+}
+
+.select-box__option {
+  display: block;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.select-box__option:hover,
+.select-box__option:focus {
+background: #F4F4F4;
+}
+
+@-webkit-keyframes HideList {
+  from {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+
+  to {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+  }
+}
+
+@keyframes HideList {
+  from {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+
+  to {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+  }
 }

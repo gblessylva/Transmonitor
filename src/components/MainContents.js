@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import TopWidget from './common/TopWidget';
 import Overview from './common/OverviewSection';
-
+import TableSection from './common/PaymentTable'
 class MainContents extends Component {
   render() {
     const widgetData = [
@@ -27,7 +27,9 @@ class MainContents extends Component {
         <div>
             <Overview />
         </div>
-
+        <div>
+            <TableSection />
+        </div>
       </div>
       </React.Fragment>
     )
