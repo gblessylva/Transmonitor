@@ -47,7 +47,12 @@ const data = [
 
         </div>
         <div className='graph-label'>
-
+          <div> Jan</div>
+          <div> Feb</div>
+          <div> Mar</div>
+          <div> Apr</div>
+          <div> May</div>
+          <div> June</div>
         </div>
 
         <Area />

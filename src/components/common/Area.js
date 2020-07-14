@@ -77,13 +77,13 @@ function ChartBig() {
 
 
   return (
-    <Chart scale={scale} height={160} data={data} autoFit >
+    <Chart scale={scale} height={200} data={data} autoFit >
       <Area
           color = "l (90) 0:rgba(2, 148, 255, 0.97)   1: rgba(255, 255, 255, 0.95)"
         position="year*value"
         shape='polygon'
 
-      /> 
+      />
 
       <Axis
         grid={grid}
