@@ -2,17 +2,17 @@ import React from 'react';
 
 function Table(props) {
   return (
-      <tr>
-        <td>
+      <div  className='table-items'>
+        <div >
           <div className='type-cycle'>VW</div>
             {props.itemName}
-          </td>
-          <td>$ {props.price}</td>
-          <td>{props.transactionID}</td>
-        <td>12:00</td>
-        <td> <button className={`small-cycle ${props.status}`}> {props.status}</button></td>
-        <td>&#9660;</td>
-    </tr>
+          </div>
+          <div>$ {props.price}</div>
+          <div>{props.transactionID}</div>
+        <div>12:00</div>
+        <div> <button className={`small-cycle ${props.status}`}> {props.status}</button></div>
+        <div>&#9660;</div>
+    </div>
       )
 }
 

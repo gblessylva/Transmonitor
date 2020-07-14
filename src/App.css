@@ -421,13 +421,14 @@ span.total {
   font-weight: bold;
 }
 
-.graph-header{
+.graph-header {
   display: flex;
   padding: 0.5rem 1rem;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.graph-header .bold{
+
+.graph-header .bold {
   font-family: 'Segoe UI';
   font-style: normal;
   font-weight: bold;
@@ -435,7 +436,8 @@ span.total {
   line-height: 2.4rem;
   color: #4F4F4F;
 }
-.graph-header button{
+
+.graph-header button {
   padding: 0.4rem 1.4rem;
   color: #CCCFD4;
   background: linear-gradient(0deg, #F2F4F7 0%, #FFFFFF 100%);
@@ -444,31 +446,34 @@ span.total {
   border-radius: 0.5rem;
   cursor: pointer;
 }
-.graph-header button:first-child{
+
+.graph-header button:first-child {
   margin-right: 1.8rem;
   margin-top: 1rem;
   margin-bottom: 4rem;
 }
-.graph-header select{
-padding: 0.4rem 1.4rem;
-font-family: 'Segoe UI';
-font-style: normal;
-font-weight: normal;
-font-size: 1.2rem;
-line-height: 16px;
-color: #7F8FA4;
-border: 1px solid #DDE0E3;
-border-radius: 0.5rem;
-outline:#DDE0E3;
+
+.graph-header select {
+  padding: 0.4rem 1.4rem;
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2rem;
+  line-height: 16px;
+  color: #7F8FA4;
+  border: 1px solid #DDE0E3;
+  border-radius: 0.5rem;
+  outline: #DDE0E3;
 }
-.graph-header select option{
- background: #FFFFFF;
+
+.graph-header select option {
+  background: #FFFFFF;
   color: #7F8FA4;
   border: none;
   outline: none;
 }
 
-.graph-label{
+.graph-label {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -476,7 +481,8 @@ outline:#DDE0E3;
   align-items: center;
   position: absolute;
 }
-.graph-label > div{
+
+.graph-label>div {
   position: relative;
   border-right: 1px solid #CFE8FB;
   width: 100%;
@@ -488,21 +494,25 @@ outline:#DDE0E3;
   font-size: 1.4rem;
   line-height: 19px;
 }
-.graph-label>div:last-child{
+
+.graph-label>div:last-child {
   border: none;
 }
+
 /* Styling for Payment Section */
-.table-section-container{
+.table-section-container {
   display: flex;
   height: 80rem;
   flex-direction: column;
 }
-.table-section-container header{
+
+.table-section-container header {
   display: flex;
-  width:100%;
+  width: 100%;
   flex-direction: column;
 }
-.table-section-container header .header-details{
+
+.table-section-container header .header-details {
   display: flex;
   margin-top: 2rem;
   justify-content: space-between;
@@ -515,62 +525,112 @@ outline:#DDE0E3;
   line-height: 17px;
   color: #262626;
 }
-.table-section-container header h3{
+
+.table-section-container header h3 {
   font-family: 'Segoe UI';
   font-style: normal;
   font-weight: normal;
   font-size: 3.6rem;
   line-height: 4.8rem;
   display: flex;
-  padding:1rem;
+  padding: 1rem;
   align-items: flex-end;
   padding-left: 0.5rem;
   color: #262626;
-  }
+}
 
-  .header-details p span{
-    color: #1875F0
-  }
-  .header-details p span:after{
-    content: '\25BC';
-    cursor: pointer;
-    padding:0.2rem;
-  }
-.table-section-container header .search-form{
-    background-color: #E5E5E5;
-    color: #787878;
-    font-size: 1.1rem;
-    width: 30rem;
-    border-bottom: 0.5px solid #787878;
+.header-details p span {
+  color: #1875F0
 }
-.table-section-container header .search-form button{
-      color: #787878;
+
+.header-details p span:after {
+  content: '\25BC';
+  cursor: pointer;
+  padding: 0.2rem;
 }
-.table-section-container header .search-form div input[type='text']{
+
+.table-section-container header .search-form {
+  background-color: #E5E5E5;
+  color: #787878;
+  font-size: 1.1rem;
+  width: 30rem;
+  border-bottom: 0.5px solid #787878;
+}
+
+.table-section-container header .search-form button {
+  color: #787878;
+}
+
+.table-section-container header .search-form div input[type='text'] {
   background: none;
   width: 20rem;
 }
+
 /* Table Contents */
-.table-main{
-  width:100%;
+.table-main {
+  width: 100%;
 
 }
-.table-main table{
-  margin: 0.5rem;
-  width:100%;
-  border-collapse: collapse;
-  text-align: left;
+
+.table-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
-th{
-  padding:1rem;
-}
-td {
-  border-bottom: 1px solid #dddddd;
-  text-align: left;
+
+.table-header {
+  display: flex;
   padding: 1rem;
-  background: #fff;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-family:' Segoe UI';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  color: #7F8FA4;
 }
-  .select-box {
+
+.table-items{
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  color: #414042;
+  background: white;
+}
+
+.type-cycle {
+  padding: 0.5rem;
+  border-radius: 50%;
+  margin-right: 3rem;
+  width: 2rem;
+  height: 2rem;
+  background: #7F8FA4;
+  display: flex;
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2rem;
+  align-items: center;
+  color: #FFFFFF;
+
+}
+
+.Pending {
+  border: 1px solid #CCCFD4;
+  box-sizing: border-box;
+  border-radius: 30px;
+  outline: none;
+  padding: 1rem;
+}
+
+.select-box {
   position: relative;
   width: 15rem;
   font-family: 'Segoe UI';
@@ -605,6 +665,7 @@ td {
   -webkit-transform: translateY(-50%) rotate(180deg);
   transform: translateY(-50%) rotate(180deg);
 }
+
 .select-box__icon {
   position: absolute;
   top: 50%;
@@ -616,6 +677,7 @@ td {
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
 }
+
 .select-box__value {
   display: -webkit-box;
   display: flex;
@@ -632,9 +694,10 @@ td {
 .select-box__input-text {
   display: none;
   width: 100%;
-  padding:1rem 1.5rem;
+  padding: 1rem 1.5rem;
   background: #F4F4F4;
 }
+
 .select-box__list {
   position: absolute;
   width: 100%;
@@ -662,7 +725,7 @@ td {
 
 .select-box__option:hover,
 .select-box__option:focus {
-background: #F4F4F4;
+  background: #F4F4F4;
 }
 
 @-webkit-keyframes HideList {

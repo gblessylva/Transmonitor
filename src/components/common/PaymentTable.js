@@ -78,19 +78,19 @@ function TableSection() {
 </div>
  </header>
       <div className='table-main'>
-            <div className='container'>
-    <div className='table-header'>
+            <div className='table-container'>
+             <div className='table-header'>
+            <div>Item Type</div>
+            <div>Price</div>
+              <div>Transaction No</div>
+              <div>Time</div>
+              <div>Status</div>
+              <div>Info</div>
+         </div>
 
-    </div>
-    <table>
-      <tr>
-        <th>Item Type</th>
-        <th>Price</th>
-          <th>Transaction No</th>
-          <th>Time</th>
-          <th>Status</th>
-          <th>Info</th>
-      </tr>
+   <div>
+
+
         {itemsData.map((data, key) => {
            const { itemName, price, transactionID, status } = data
            return (
@@ -103,10 +103,7 @@ function TableSection() {
           />
             )
           })}
-        <Table
-
-        />
-    </table>
+</div>
     </div>
 
  </div>
